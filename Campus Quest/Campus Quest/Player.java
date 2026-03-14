@@ -1,8 +1,6 @@
 import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
-import javax.swing.Timer;
-import Music.Sound;
 
 public class Player {
     // 17 vars
@@ -131,9 +129,9 @@ public class Player {
     public Rectangle getBounds(String orientation) {
         switch (orientation) {
             case "down":
-                return new Rectangle(x + 12, y + height - 4, width - 24, 4);
+                return new Rectangle(x + 11, y + height - 4, width - 24, 4);
             case "top":
-                return new Rectangle(x + 12, y, width - 20, 5);
+                return new Rectangle(x + 11, y, width - 20, 5);
             case "right":
                 return new Rectangle(x + width - 10, y + 12, 4, height - 24);
             case "left":
